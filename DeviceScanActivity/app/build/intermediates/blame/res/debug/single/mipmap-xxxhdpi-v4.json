@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/hari/Downloads/Volo/DeviceScanActivity/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
+        "source": "/home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/hari/Downloads/Volo/DeviceScanActivity/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_attnd.png",
+        "source": "/home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/res/mipmap-xxxhdpi/ic_attnd.png"
+    }
+]

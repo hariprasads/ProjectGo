@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/hari/Downloads/Volo/DeviceScanActivity/app/build/intermediates/res/merged/debug/menu/gatt_services.xml",
+        "source": "/home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/res/menu/gatt_services.xml"
+    },
+    {
+        "merged": "/home/hari/Downloads/Volo/DeviceScanActivity/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/res/menu/main.xml"
+    }
+]

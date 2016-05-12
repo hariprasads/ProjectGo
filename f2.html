@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.getJSON demo</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+
+<body>
+
+<h2>Student Attendance for 273 and 275</h2>
+
+<p id="demo"></p>
+<script>
+$(function(){
+  //  http://0.0.0.0:5000/users
+    $.getJSON('http://52.53.196.31:5000/users/', function(data) {
+      //  alert(JSON.stringify(data));
+        console.log(data);
+        console.log(typeof(data));
+               obj = data;
+
+/*
+        for(var i=0;i< obj.length;i++){
+
+      //  document.getElementById("demo").innerHTML += (obj[i].name + " " + obj[i].id + " 273 :");
+        for(var j=0;j< obj[i].class273.length;j++){
+          if(obj[i].class273[j].present == "yes"){
+              document.getElementById("demo").innerHTML += (obj[i].name + " " + obj[i].id + " 273: ");
+              document.getElementById("demo").innerHTML += (obj[i].class273[j].date + " <br>" );
+          }
+      //  document.getElementById("demo").innerHTML += (obj[i].class273[j].date + " " + obj[i].class273[j].present);
+      }
+      for(var j=0;j< obj[i].class275.length;j++){
+        if(obj[i].class275[j].present == "yes"){
+          document.getElementById("demo").innerHTML += (obj[i].name + " " + obj[i].id + " 275: ");
+            document.getElementById("demo").innerHTML += (obj[i].class275[j].date + " <br>" );
+        }
+    }
+      //document.getElementById("demo").innerHTML += "<br>"
+
+}
+*/
+
+
+//table for 273
+var customers = new Array();
+    customers.push(["Id", "Name", "273"]);
+    for(var i=0;i< obj.length;i++){
+
+  //  document.getElementById("demo").innerHTML += (obj[i].name + " " + obj[i].id + " 273 :");
+  if(obj[i].class273){
+    for(var j=0;j< obj[i].class273.length;j++){
+      if(obj[i].class273[j].present == "yes"){
+          customers.push([obj[i].id,obj[i].name,obj[i].class273[j].date]);
+      }
+  //  document.getElementById("demo").innerHTML += (obj[i].class273[j].date + " " + obj[i].class273[j].present);
+  }
+}
+}
+
+var table = document.createElement("TABLE");
+   table.border = "1";
+
+   //Get the count of columns.
+   var columnCount = customers[0].length;
+
+   //Add the header row.
+   var row = table.insertRow(-1);
+   for (var i = 0; i < columnCount; i++) {
+       var headerCell = document.createElement("TH");
+       headerCell.innerHTML = customers[0][i];
+       row.appendChild(headerCell);
+   }
+
+   //Add the data rows.
+   for (var i = 1; i < customers.length; i++) {
+       row = table.insertRow(-1);
+       for (var j = 0; j < columnCount; j++) {
+           var cell = row.insertCell(-1);
+           cell.innerHTML = customers[i][j];
+       }
+   }
+
+   var dvTable = document.getElementById("dvTable");
+   dvTable.innerHTML = "";
+   dvTable.appendChild(table);
+
+//over
+
+// table for 275
+var customers2 = new Array();
+    customers2.push(["Id", "Name", "275"]);
+    for(var i=0;i< obj.length;i++){
+
+  //  document.getElementById("demo").innerHTML += (obj[i].name + " " + obj[i].id + " 273 :");
+    if(obj[i].class275){
+    for(var j=0;j< obj[i].class275.length;j++){
+
+      if(obj[i].class275[j].present == "yes"){
+          customers2.push([obj[i].id,obj[i].name,obj[i].class275[j].date]);
+      }
+    }
+  //  document.getElementById("demo").innerHTML += (obj[i].class273[j].date + " " + obj[i].class273[j].present);
+  }
+}
+
+var table1 = document.createElement("TABLE");
+   table.border = "1";
+
+   //Get the count of columns.
+   var columnCount1 = customers2[0].length;
+
+   //Add the header row.
+   var row1 = table.insertRow(-1);
+   for (var i = 0; i < columnCount1; i++) {
+       var headerCell = document.createElement("TH");
+       headerCell.innerHTML = customers2[0][i];
+       row1.appendChild(headerCell);
+   }
+
+   //Add the data rows.
+   for (var i = 1; i < customers2.length; i++) {
+       row1 = table.insertRow(-1);
+       for (var j = 0; j < columnCount1; j++) {
+           var cell = row1.insertCell(-1);
+           cell.innerHTML = customers2[i][j];
+       }
+   }
+
+   var dvTable1 = document.getElementById("dvTable2");
+   dvTable1.innerHTML = "";
+   dvTable1.appendChild(table1);
+//over
+
+});
+});
+//obj[i].class273[i].date + " "+ obj[i].class273[i].present
+
+</script>
+<div id="dvTable" style="float: left; width: 500px">
+</div>
+<div id="dvTable2" style="float: right; width: 500px">
+</div>
+</body>
+</html>

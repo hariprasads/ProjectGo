@@ -1,0 +1,117 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:16:1-76:12
+	xmlns:android
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:16:11-69
+	package
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:17:5-50
+		INJECTED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:19:5-30
+		INJECTED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:18:5-28
+		INJECTED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:21:5-23:41
+	android:targetSdkVersion
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:23:9-38
+		INJECTED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:22:9-35
+		INJECTED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml
+uses-feature#android.hardware.bluetooth_le
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:30:5-32:35
+	android:required
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:32:9-32
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:31:9-53
+uses-permission#android.permission.BLUETOOTH
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:34:5-68
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:34:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:35:5-74
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:35:22-71
+uses-permission#android.permission.INTERNET
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:36:5-67
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:36:22-64
+android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:38:5-89
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:38:30-86
+android:uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:39:5-83
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:39:30-80
+android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:40:5-88
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:40:30-85
+application
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:42:5-74:19
+	android:label
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:44:9-41
+	android:icon
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:43:9-45
+	android:theme
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:45:9-56
+activity#com.example.android.bluetoothlegatt.DeviceScanActivity
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:46:9-48:48
+	android:label
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:48:13-45
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:47:13-47
+activity#com.example.android.bluetoothlegatt.DeviceControlActivity
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:49:9-59
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:49:19-56
+service#com.example.android.bluetoothlegatt.BluetoothLeService
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:51:9-53:38
+	android:enabled
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:53:13-35
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:52:13-47
+activity#com.example.android.bluetoothlegatt.Attendance
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:55:9-57:65
+	android:label
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:57:13-62
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:56:13-39
+activity#com.example.android.bluetoothlegatt.Login
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:58:9-66:20
+	android:label
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:60:13-57
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:59:13-34
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:61:13-65:29
+action#android.intent.action.MAIN
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:62:17-69
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:62:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:64:17-77
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:64:27-74
+activity#com.example.android.bluetoothlegatt.signup
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:67:9-69:61
+	android:label
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:69:13-58
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:68:13-35
+activity#com.example.android.bluetoothlegatt.MarkAttnd
+ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:70:9-73:61
+	android:screenOrientation
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:73:13-49
+	android:label
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:72:13-62
+	android:name
+		ADDED from /home/hari/Downloads/Volo/DeviceScanActivity/app/src/main/AndroidManifest.xml:71:13-38
